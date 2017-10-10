@@ -1,0 +1,179 @@
+/*selektor uniwersalny łapie wszystkie elementy na stronie */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 30px;
+}
+#testowy {
+    backgroud-color: aqua;
+}
+.testowy_inner {
+    color: green;
+    font-size: 36px;
+} 
+
+#selektor_potomka p {
+    font-size: 48px;
+    color: red;
+}
+
+/*selektor dziecka/bezpośredniego potomka lapi elementy na bezp poziomie zagniezdzenia >*/
+
+#selektor_dziecka >p {
+    font-size: 40px;
+    color: violet;
+}
+
+/*selektor braci - lapie elementy bezposrednio po elemencie poprzedzającym na tym samym poziomie zagnieżdżenia*/
+#selektor_braci span + p {
+    color: black;
+    background-color: aqua;
+}
+
+#pseudoelementy h1::before {
+    content: 'Lorem';
+    color: red;
+}
+
+#pseudoelementy h1::after {
+    content: 'Lorem';
+    color: green;
+}
+
+#pseudoelementy h1::first-letter {
+    color: yellow;
+}
+
+#pseudoelementy .first-line::first-line {
+    color: chocolate;
+}
+
+/*pseudoklasa :link, słuzy do stylowania nieodwiedzonych linków*/
+#linki a:hover {
+    color: red;
+}
+
+#linki a:active {
+    color: orange;
+}
+
+#inputy input {
+    width: 99%;
+    margin-bottom: 20px;
+}
+
+#inputy input:focus {
+    border: 3px solid red;
+}
+:target {
+    border: 1px solid black;
+}
+div {background-color: grey;}
+
+div:lang(pl) {
+    background-color: yellow;
+}
+
+#lista-dzieci ul .list-item:first-child {
+    font-size: 30px;
+    color: red;
+}
+
+#lista-dzieci ul .list-item:last-child {
+    font-size: 30px;
+    color: blue;
+}
+#jedyne-dziecko span:only-child {
+    font-style: italic;
+    font-size: 30px;
+    color: green;
+}
+/*div:empty {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}*/
+
+#kontener .inner {
+    display:inline-block;
+    height: 300px;
+    background-color: red;
+    margin-bottom: 20px;
+    width: 33%;
+    float: left;
+    margin-right: 0.5%;
+}
+
+#kontener .inner:nth-child(3n+3){
+margin-right: 0;
+}
+
+#kontener .inner:nth-child(even){
+background-color: yellow;
+}
+.clear {
+    clear: both;
+    display: block;
+    width: 100%;
+}
+
+input[type] {
+    background-color: green;
+}
+
+input[type="tel"] {
+    background-color: red;
+}
+
+input[type~="opis"] {
+    background-color: black;
+}
+
+input[type*="piaty"] {
+    background-color: blue;
+}
+
+input[type^="poczatek"] {
+    background-color: blue;
+}
+
+input[type$="koniec"] {
+    background-color: blue;
+}
+
+#floated img {
+    float: left;
+}
+
+#tranzycje .inner_1 {
+    background-color: green; 
+    transition: all 0.4s;
+}
+#tranzycje .inner_1:hover {
+    background-color: blue;
+    width: 800px;
+}
+#tranzycje .inner_2 {background-color: red;}
+
+/*http://polki.pl/foto/4_3_SMALL/czy-labrador-to-pies-dla-ciebie-2341427.jpg*/
+
+#tlo {
+    width: 50%;
+    height: 600px;
+    /*background-image: linear-gradient(rgba(0,0,0,0.5), rgba(10,225,100,0.6)), url(http://polki.pl/foto/4_3_SMALL/czy-labrador-to-pies-dla-ciebie-2341427.jpg);*/
+    background-image: url(http://polki.pl/foto/4_3_SMALL/czy-labrador-to-pies-dla-ciebie-2341427.jpg);
+        background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    border: solid 1px black;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#tlo p {
+    font-size: 45px;
+}

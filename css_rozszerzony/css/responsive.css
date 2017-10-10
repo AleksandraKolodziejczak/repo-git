@@ -1,0 +1,27 @@
+/*@media all and (min-width: 800px) and (max-width: 1200px) {
+    div {
+        background-color: aqua;
+    }
+    #kontener .inner {
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    #kontener .inner:nth-child(3n+3) {
+        margin-right: 1%;
+    }
+}
+
+@media all and (orientation: landscape) {
+    div {
+        background-color: red;
+    }
+}*/
+
+@media all and (max-width: 1200px) {}
+
+@media all and (max-width: 992px) {}
+
+@media all and (max-width: 768px) {}
+
+@all and (max-width: 480px){}

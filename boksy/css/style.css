@@ -1,0 +1,21 @@
+.inner {
+    margin: 10px auto;
+    height: 150px;
+    width: 150px;
+    transition: all 0.4s;
+}
+
+.red {
+    background-color: red; 
+}
+.red:hover {width: 300px;}
+
+.green {
+    background-color: green;}
+.green:hover {width: 300px; height: 300px;}
+
+.blue {
+    background-color: blue;}
+.blue:hover {height: 300px;}
+
+/*http://polki.pl/foto/4_3_SMALL/czy-labrador-to-pies-dla-ciebie-2341427.jpg*/
