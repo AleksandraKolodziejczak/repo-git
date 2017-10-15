@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400|Roboto:100,400&amp;subset=latin-ext" rel="stylesheet">
+    <script src="https://use.fontawesome.com/620a15da4f.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <!--Menu główne - START -->
 
     <nav id="menu">
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop"/>
         <ul>
             <li class="menu-item"><a href="#">o mnie</a></li>
             <li class="menu-item"><a href="#skills">umiejętności</a></li>
@@ -47,6 +51,117 @@
         <div class="clear"></div>
     </section>
 
+    <!--umiejetnosci-->
+
+    <section id="skills">
+        <h2>Moje <span style="color:#1ac056">umiejętności</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci quis consequuntur sint aut, consectetur ab omnis nisi obcaecati fuga? Unde sit numquam et mollitia modi molestiae quidem amet ut reiciendis.</p>
+        <div id="skills-icons">
+            <figure class="skills-icons-item">
+                <img src="icons/html5.png" alt="ikona HTML5">
+                <figcaption>HTML 5</figcaption>
+            </figure>
+            <figure class="skills-icons-item">
+                <img src="icons/css3.png" alt="ikona CSS3">
+                <figcaption>CSS 3</figcaption>
+            </figure>
+            <figure class="skills-icons-item">
+                <img src="icons/jquery.png" alt="ikona JQUERY">
+                <figcaption>Jquery</figcaption>
+            </figure>
+            <figure class="skills-icons-item">
+                <img src="icons/js.png" alt="JS">
+                <figcaption>JS</figcaption>
+            </figure>
+        </div>
+    </section>
+    <!--moje porfolio-->
+    <section id="portfolio">
+        <h2>Moje <span style="color:#1ac056">portfolio</span></h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item" id="portfolio-item-1">
+                <div class="item-mask">
+                    <div class="item-content">
+                        <div class="item-content-inner">
+                            <h3>Lorem ipsum</h3>
+                            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur soluta ad quasi ipsam numquam, omnis similique deleniti cum veritatis.</p>
+                            <h4>Wykorzystane technologie:</h4>
+                            <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
+                            <a href="#" class="project-link">
+                   <i class="fa fa-link fa-2x"></i>
+                   </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" id="portfolio-item-2">
+                <div class="item-mask">
+                    <div class="item-content">
+                        <div class="item-content-inner">
+                            <h3>Lorem ipsum</h3>
+                            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur soluta ad quasi ipsam numquam, omnis similique deleniti cum veritatis.</p>
+                            <h4>Wykorzystane technologie:</h4>
+                            <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
+                            <a href="#" class="project-link"><i class="fa fa-link fa-2x"></i>
+                   </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item" id="portfolio-item-3">
+                <div class="item-mask">
+                    <div class="item-content">
+                        <div class="item-content-inner">
+                            <h3>Lorem ipsum</h3>
+                            <p class="project-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur soluta ad quasi ipsam numquam, omnis similique deleniti cum veritatis.</p>
+                            <h4>Wykorzystane technologie:</h4>
+                            <p class="project-technologies">HTML5, CSS3, RWD, JS</p>
+                            <a href="#" class="project-link"><i class="fa fa-link fa-2x"></i>
+                   </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--kontant-->
+<section id="contact">
+   
+    <div class="contact-data">
+        <h2><span style="color:#1ac056">Aleksandra</span> Kołodziejczak</h2>
+    <address>
+        ul. Mostowa 6/13<br>
+        11-22 Warszawa<br><br>
+        tel: 123 45 67 89 <br>
+        e-mail: <a href="mailto:kursy@arena108.pl">
+            kursy@arena108.pl
+        </a></address> 
+        <div class="contact-social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="contact-form">
+         <form action="">
+        
+         <input type="text" name="name" id="imie" placeholder="Imię i nazwisko">
+        
+      
+         <input type="email" name="email" id="email" placeholder="Adres email">
+      
+        
+        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Wiadomość"></textarea>
+        
+        <input type="submit" value="Wyślij">
+    </form>
+    </div>
+
+</section>
+<footer>
+    <p class="copyright">Copyright &copy; Jan Nowak</p>
+</footer>
 </body>
 
 </html>
