@@ -1,0 +1,8 @@
+#lista ul li {
+    list-style: none;
+}
+
+li.fa-angle-double-right​::before {
+    content: '\f0a4';
+    font-family: FontAwesome;
+}

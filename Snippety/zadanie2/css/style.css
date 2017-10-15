@@ -1,0 +1,21 @@
+
+
+#kolo a {
+    border-radius: 100%;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border: 1px solid violet;
+    margin-right: 30px;
+    font-size: 30px;
+    display: inline-block;
+    line-height: 100px;
+}
+
+
+#kolo a:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: violet;
+}

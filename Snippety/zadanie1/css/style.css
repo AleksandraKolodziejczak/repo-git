@@ -8,9 +8,9 @@
 #maly-kwadrat
     {
     background-color: pink;
-    width: 100px;
-    height: 100px;
+    width: 50%;
+    height: 50%;
     position: absolute;
     top: 25%;
-        left: 25%;
+    left: 25%;
 }

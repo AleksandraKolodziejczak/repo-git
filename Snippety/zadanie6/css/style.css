@@ -1,0 +1,43 @@
+.contact-form {
+    width: 50%;
+    float: left;
+    margin-top: 100px;
+}
+
+input::placeholder{color: orange;}
+textarea::placeholder {color: red;}
+
+input[type='text']:-ms-input-placeholder {
+    color: blue;
+}
+input[type='email']::-moz-placeholder {
+    color: green;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    border: #2b4a64 2px solid;
+    color: #fff;
+}
+
+
+.contact-form form input[type='submit'] {
+    background-color: #1ac056;
+    color: #fff;
+    width: auto;
+    text-transform: uppercase;
+    font-weight: 600;  
+    padding: 15px 30px;
+    float: right;
+    border: 1px #1ac056 solid;
+}
+
+
+.contact-form form input[type='submit']:hover {
+    background-color: #fff;
+    color: #1ac056;
+}
