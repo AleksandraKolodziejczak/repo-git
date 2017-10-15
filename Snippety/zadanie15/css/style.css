@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+
+}
+.column {
+    height: 100vh;
+    width: 25%;
+    display:inline-block;
+    float: left;
+    transition: all 0.5s linear;
+    
+        
+}
+.background {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.column:hover {
+    width: 40%;
+}
+
+.container:hover .column:not(:hover) {width: 20%;}
+
+#background-1 {background-image: url(../img/pobrane.jpg);}
+
+#background-2 {background-image: url(../img/pies.jpg);}
+
+#background-3 {background-image: url(../img/pobrane.jpg);}
+
+#background-4 {background-image: url(../img/pies.jpg);}
