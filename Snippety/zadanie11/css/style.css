@@ -1,0 +1,17 @@
+h1 {font-size: 3em;}
+.pulse {color: red;
+animation-name: pulse;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+
+    
+}
+
+@keyframes pulse {
+   50% {
+        transform: scale(1.5);
+    }
+    100% {
+       transform: scale(1);
+    }
+}

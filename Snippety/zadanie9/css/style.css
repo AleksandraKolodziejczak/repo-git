@@ -1,0 +1,25 @@
+body {
+    margin:0;
+
+}
+#content {
+  height: 200vh;
+    width: 100%;
+    background: red;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #142634;
+    color: #fff;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+footer p {
+    margin: 0;
+}
+

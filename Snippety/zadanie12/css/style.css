@@ -1,0 +1,45 @@
+* {margin: 0;}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+
+.curtain {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+}
+
+.top {
+    background-color: red; 
+    animation-name: top-down;
+  
+}
+
+.bottom {
+    position: absolute;
+    background-color: fuchsia;
+    top: 50%;
+    animation-name: bottom-top;
+}
+@keyframes top-down {
+    0% {
+        height: 0vh;
+    }
+    100% {
+        height: 50vh;
+    }
+}
+
+@keyframes bottom-top {
+    0% {
+        top: 100%;}
+    100% {
+        top: 50%
+    }
+}
