@@ -34,3 +34,9 @@ var liczba8 = 10;
 
 console.log('---------------------');
 console.log((liczba6 != liczba7) && (liczba6 != liczba8));
+
+console.log(!false);
+
+var porownanie = (liczba6 == liczba7) ? 'tak' : 'nie'//skrocony zapis
+
+console.log(porownanie);
