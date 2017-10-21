@@ -1,4 +1,4 @@
-* box-sizing {
+* {box-sizing:
     border-box;
 }
 
@@ -9,8 +9,8 @@ body {
 }
 
 section {
-    padding: 30px 50px;
-    overflow: hidden;
+    padding: 0 80px 100px;
+    width: 100%;
 }
 
 section h2 {
@@ -22,7 +22,9 @@ section h2 {
 
 p { line-height: 25px;}
 
-
+h1, h2, h3, h4, h5, h6 {
+	text-align: center;
+}
 
 /* nav */
 
@@ -30,35 +32,34 @@ p { line-height: 25px;}
     background-color: #fff;
     height: 50px;
     position: fixed;
-    text-align: right;
     width: 100%;
     z-index: 1;
+    top: 0;
+    right: 0;
 }
 #menu .toggle, [id="drop"] {
     display: none;
 }
 #menu > ul {
     margin: 0;
-    list-style-type: none;
-background-color: #fff;
+    float: right;
 
 }
 
-#menu ul .menu-item {
-    display: inline;
-    line-height: 50px;
-    margin: 30px;
-    line-height: 50px;
-
+#menu ul li {
+    display: inline-block;
+   padding: 20px 40px;
+    list-style: none;
 }
 
-#menu ul .menu-item a {
+#menu > ul >li > a {
     color: #1ac056;
     text-decoration: none;
+    font-weight: 300;
 
 }
 
-#menu ul .menu-item a:hover {
+#menu > ul >li > a:hover {
     color: #333;
 
 }
@@ -67,57 +68,26 @@ background-color: #fff;
 #main-header {
 
     background: url(../img/header-background.jpg) no-repeat;
-    height: 80vh;
     text-align: center;
     background-size: cover;
-    position: relative;
+    background-position: center;
+    color: #fff;
 
 }
 
 #main-header .main-header-text {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    color: #FFFFFF;
-    width: 100%;
-    font-size: 20px;
-    font-family: 'Roboto', sans-serif;
+   padding: 30vh;
+    text-align: center;  
 }
 
+h1 { font-family: 'Roboto', sans-serif; font-size: 4em;}
 h1,
 h2 {
     font-weight: 100;
-    text-align: center;
+    font-size: 2em;    
 }
 
 
-
-
-
-.col-one-half {
-    width: 50%;
-    float: left;
-    display: inline-block;
-    margin: 0;
-}
-
-.about-content {
-    text-align: left;
-}
-
-
-
-figure {text-align: center;}
-
-#about figure img {
-    width: 50%;
-    max-height: 350px;
-    border: 14px solid #fff;
-    border-radius: 15px;
-    max-width: 100%;
-    display: inline;
-
-}
 
 #about {
 background-color: #f9fcfe;
@@ -136,8 +106,8 @@ width: 50%;
 float: left;
 }
 
+
 #about > figure > img {
-    width: 50%;
     max-height: 350px;
     border: 14px solid #fff;
     border-radius: 15px;
@@ -145,8 +115,6 @@ float: left;
     
     
 }
-
-
 
 #skills #skills-icons figure {
     display: inline-block;
