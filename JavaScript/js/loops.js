@@ -18,7 +18,7 @@ console.log("Element z Indexem: " + index + " ma wartość " + element);
 
 var it = 0;
 while(it < 10) {
-    console.log("It: " + it);
+    console.log("It: " + it);//dopóki coś, to coś
     it++;
 }
 
@@ -28,7 +28,7 @@ var j = 0;
 do {
     console.log('Pętla do...while: ' + j);
     j++
-} while (j < 10)// zawsze raz się wykona
+} while (j < 10)// zawsze raz się wykona/do czasu aż...
     
 //przerwanie break
     

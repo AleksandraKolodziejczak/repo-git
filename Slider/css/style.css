@@ -1,0 +1,73 @@
+/*
+2. Dla tagów html i body daj padding i margines równy 0;
+3. Elementowi z id #slider nadaj pozycję relatywną, overflow: hidden i wysokość 600px;
+4. Elementowi z klasą .slide-show nadaj pozycję absolutną i wysokość 100%
+5. Elementowi z klasą .single-slide nadaj pozycję absolutną oraz wartości: 
+top=0 i bottom=0
+6. Elementom img nadaj wysokość i szerokość 100%, ponieważ obrazki są różnych rozdzielczości.
+7. .slide-caption – ustaw pozycję absolutną i wypozycjonuj w pionie: top 50%, transform: translateY(-50%), oraz w poziomie: left 0, right 0, margin 0 auto i text-align: center; 
+Dodatkowo nadaj elementom z-index: 5, aby były ponad obrazami. Dodatkowo możesz napisom ustawić kolor czcionki na biały i wielkość na 4em. 
+8. .slider-arrows button - wypozycjonuj na środku w pionie za pomocą pozycji absolutnej, top 50%, transform translateY(-50%)
+9. .prev-slide – nadaj pozycję absolutną i left: 0
+10. .next-slide - nadaj pozycję absolutną i right: 0
+11. Stworzonej nawigacji (.prev-slide i .next-slide) nadaj z-index więcej niż 5, aby była ponad warstwą napisu na slajdzie*/
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+#slider {
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+#slider .slide-show {
+    position: absolute;
+    height: 100%;
+    
+}
+
+#slider .slide-show .single-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+
+#slider .slide-show .single-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slider .slide-show .single-slide .slide-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    font-size: 4em;
+    z-index: 5;
+}
+
+#slider .slider-arrows button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+
+
+#slider .prev-slide {
+    
+    left: 5px;
+}
+
+#slider .next-slide {
+
+    right: 5px;
+}
