@@ -17,32 +17,38 @@
 
 'use strict';
 $(document).ready(function() {
-    var slideShow = $(".slide-show");
-    var slideCount = $(".single-slide").length;
-    var slideWidth = 100/slideCount;
-    var slideIndex = 0;
+    var slideShow = $(".slide-show");//wyszukiwanie elementów po klasie - kontener
+    var slideCount = $(".single-slide").length;// ile jest elementow - lenght;
+    var slideWidth = 100/slideCount;// dlugosc, czyli kontener 100% dzielimy na 4 - bo jest 4 elementy
+    var slideIndex = 0;// index pierwszego slajdu
     
-    slideShow.css("width", slideCount + "00%");
-    slideShow.find(".single-slide").each(function(index) {
+    slideShow.css("width", slideCount + "00%"); // nadajemy wlasciwosc dlugosci
+    slideShow.find(".single-slide").each(function(index) {//znajdz w kontenerze kazdy slajd i po kolei nadaj szerokosc
         
     console.log("dziala");
         $(this).css({"width": slideWidth + "%", "margin-left" : index * slideWidth + "%"});
         });
         
-        function slide(newSlideIndex) {
-            if (newSlideIndex < 0 || newSlideIndex > slideCount - 1) {return;}
+    //funkcja, jak klikniemy w lewo, to przesunie w lewo, a ajk w prawo, to w prawo, przesuwamy slidera   
+    //konkretny slajd
+    function slide(newSlideIndex) {
+            if (newSlideIndex < 0 || newSlideIndex > slideCount - 1) {return;}//jesli mniejszy od indexu 0 lub większy od indexu 3 to return, czyli stop,nie zwraca nic - null i się dalej nie wykonuje, bez else,bo jest return
             
-            var slideCaption = slideShow.find(".slide-caption").eq(newSlideIndex);//napis aktualnego slidu,wyszukujemy elementy z klasą w koontenerze
+            var slideCaption = slideShow.find(".slide-caption").eq(newSlideIndex);//napis aktualnego slidu,wyszukujemy elementy z klasą w koontenerze, pobieramy pokolei, konkretny napis z indexem
             
             var marginLeft = (newSlideIndex * (-100)) + "%";//-index slijdu razy 100
 
             slideCaption.hide();
             
             slideShow.animate({"margin-left" : marginLeft}, 1000, function() {
-                slideIndex = newSlideIndex;
+                slideIndex = newSlideIndex;//zmieniamy wartosc aktualnego indexu
                 slideCaption.fadeIn();
             })
         }  
+    
+    
+    
+    //obsluga slajdera
         $(".prev-slide").click(function() {
             slide(slideIndex - 1);
         });
