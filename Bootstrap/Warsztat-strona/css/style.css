@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #777;
+}
+
+section {
+    padding: 60px; 0;
+}
+
+
+
+#main-nav {background-color: #fff; opacity: 0.8;}
+#main-nav a.navbar-brand {
+  
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+}
+#main-nav .nav-item a {padding-right: 4.5rem; text-transform: uppercase;color: #777; text-decoration: none;}
+#main-nav .nav-item a:hover {color: #0ed8d6;}
+#main-header {
+    position: relative;
+    background: linear-gradient(rgba(225,225,225,0.5), rgba(160,160,160,0.6) 100%), url(../img/header/pictures_on_the_wall.jpg) no-repeat;
+/*    text-align: center;*/
+    background-size: cover;
+    background-position: center;
+ color: #fff;
+    height: 100vh;
+    
+}
+#main-header .main-header-text {
+   padding: 30vh;
+    text-align: center;  
+}
+#main-header h1 {text-transform: uppercase; font-weight: 700; font-size: 60px; margin: 25px 0;}
+.btn-lg {background-color:  #0ed8d6;border: none; cursor: pointer; text-transform: uppercase;}
+
+.btn-lg:hover {background-color:  blue;border: none;}
+
+/*
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+.btn-lg, .nav-link {font-family: 'Montserrat', sans-serif;}
+
+#main-nav.scroll {
+    background-color:rgba(14,216,214,0.75);
+}
+
+#main-nav.scroll {
+    background-color:rgba(14,216,214,0.75);
+}
+
+
+#main-nav.scroll .nav-item a:hover{
+    color:#777;
+}
