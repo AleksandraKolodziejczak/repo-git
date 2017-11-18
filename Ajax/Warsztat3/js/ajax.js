@@ -76,7 +76,7 @@ if (offset >= heighy) {
 
             document.body.appendChild(par);
 
-        };
+        }
 
     });
-};
+}
